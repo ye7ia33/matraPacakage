@@ -8,16 +8,16 @@
 
 import UIKit
 
-class SecondVC: UIViewController {
+public class SecondVC: UIViewController {
     @IBOutlet weak var titleLable: UILabel!
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    func updateLabelText(_ text: String) {
+    public func updateLabelText(_ text: String) {
         self.titleLable.text = text
     }
 }
