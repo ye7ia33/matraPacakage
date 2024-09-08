@@ -13,12 +13,14 @@ public class SecondVC: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     public func updateLabelText(_ text: String) {
         self.titleLable.text = text
+    }
+    
+    @IBAction func closeButtonAction(_ sender: Any) {
+        self.dismiss(animated: true)
     }
 }
 #endif

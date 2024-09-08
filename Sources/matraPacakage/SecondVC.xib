@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23091" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23079"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,12 +22,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kA-DG-LRf">
+                        <rect key="frame" x="16" y="76" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="eSB-Zy-ciS"/>
+                            <constraint firstAttribute="width" constant="50" id="kXV-uM-fe0"/>
+                        </constraints>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="closeButtonAction:" destination="alG-Yw-LIi" eventType="touchUpInside" id="P0e-PO-XaP"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="R8x-tZ-Dcg"/>
                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 <constraints>
+                    <constraint firstItem="8kA-DG-LRf" firstAttribute="top" secondItem="R8x-tZ-Dcg" secondAttribute="top" constant="16" id="7Dx-0m-IMX"/>
                     <constraint firstItem="liA-Ia-Pts" firstAttribute="leading" secondItem="R8x-tZ-Dcg" secondAttribute="leading" constant="16" id="SDY-Ld-31d"/>
                     <constraint firstItem="liA-Ia-Pts" firstAttribute="centerY" secondItem="Zx3-8x-Bk2" secondAttribute="centerY" id="c1g-lf-wPK"/>
+                    <constraint firstItem="8kA-DG-LRf" firstAttribute="leading" secondItem="R8x-tZ-Dcg" secondAttribute="leading" constant="16" id="hEO-X8-1Vo"/>
                     <constraint firstItem="liA-Ia-Pts" firstAttribute="centerX" secondItem="Zx3-8x-Bk2" secondAttribute="centerX" id="mfg-Pj-cYX"/>
                     <constraint firstItem="R8x-tZ-Dcg" firstAttribute="trailing" secondItem="liA-Ia-Pts" secondAttribute="trailing" constant="16" id="rJy-Nn-YQg"/>
                 </constraints>
